@@ -22,7 +22,7 @@
 2. User need help and want to add **Task** to the **Charity**.
 3. User want to set a name for his/her Task.   
 3. User want to add **Task** without beeing identified because privacy problem.
-4. User want to just men/women do that **Tast** (specific Gender).
+4. User want to just men/women do that **Task** (specific Gender).
 
 ---
 
