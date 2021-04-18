@@ -13,7 +13,7 @@ In this application also we can have multiple charity ,**User**s can register **
 - Use case [Link](https://github.com/CenaAshoori/charity/blob/master/Documents/UseCase.md)
 ## Project development phases
 - Complete Back-end
-- Create API for These actions(Login ,Register ,View Task ,Add Task ,Delete Task)
+- Create API for These actions(Login ,Register ,View Task ,Add Task ,Update Task ,Delete Task)
 - Create User Interface (Login Page ,View Tasks ,Task Page ,Delete Task Page)
 
 
