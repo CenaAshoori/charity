@@ -26,4 +26,3 @@ Colaborator | ID
 Mohammad Hosein Ashoori (Back-end)|[@Cenaashoori](http://github.com/CenaAshoori)
 Me (Desktop)|[@Cenaashoori](http://github.com/CenaAshoori)
 Myself(Web)|[@Cenaashoori](http://github.com/CenaAshoori)
-I (Moblie)| [@Cenaashoori](http://github.com/CenaAshoori)
