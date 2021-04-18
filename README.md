@@ -9,8 +9,8 @@ In this application also we can have multiple charity ,**User**s can register **
 - Charity can accsses to all **Benefactor** and all of them **Task**s
 
 ## Project analysis and design
-- Scenarios [Link](http://github.com/CenaAshoori/charity/Documents/Scenarios.md)
-- Use case [Link](http://github.com/CenaAshoori/charity/Documents/UseCase.md)
+- Scenarios [Link](https://github.com/CenaAshoori/charity/blob/master/Documents/Scenarios.md)
+- Use case [Link](https://github.com/CenaAshoori/charity/blob/master/Documents/UseCase.md)
 ## Project development phases
 - Complete Back-end
 - Create API for These actions(Login ,Register ,View Task ,Add Task ,Delete Task)
