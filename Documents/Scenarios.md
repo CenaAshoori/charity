@@ -18,8 +18,7 @@
 
 ### Scenarios
 
-1. User come into the Charity Management Application.
-2. User need help and want to add **Task** to the **Charity**.
+1. User come into the Charity Management Application and want to add **Task** to the **Charity**.
 3. User want to set a name for his/her Task.   
 3. User want to add **Task** without beeing identified because privacy problem.
 4. User want to just men/women do that **Task** (specific Gender).
@@ -42,8 +41,7 @@
 
 ### Scenarios
 
-1. Benefactor come into the Charity Management Application.
-2. Benefactor need to be `registere` ro `log in`.
+1. Benefactor come into the Charity Management Application and need to be `registered` ro `loged in`.
 3. Benefactor want to see available **Task**.
 4. Benefactor want to sort available **Task**.
 5. Benefactor want to see all his/her done **Tasks**.
@@ -68,6 +66,6 @@
 
 ### Scenarios
 
-1. Benefactor wants to register his/her Charity.
+1. Benefactor wants to register his/her Charity and we show register page.
 2. Charity Owner(Benefactor) wants to get list of Benefactor of his/her Charity.
 3. Charity Owner(Benefactor) wants see all the task of his/her Charity.
