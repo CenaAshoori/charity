@@ -11,6 +11,7 @@ In this application also we can have multiple charity ,**Benifactor**s can regis
 ## Project analysis and design
 - Scenarios [Link](https://github.com/CenaAshoori/charity/blob/master/Documents/Scenarios.md)
 - Use case [Link](https://github.com/CenaAshoori/charity/blob/master/Documents/UseCase.md)
+- ER diagram [link](https://github.com/CenaAshoori/charity/blob/master/Documents/ERdiagram.png)
 ## Project development phases
 - Complete Back-end
 - Create API for These actions(Login ,Register ,View Task ,Add Task ,Update Task ,Delete Task)
