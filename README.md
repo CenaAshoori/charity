@@ -43,7 +43,7 @@ In this application also we can have multiple charity (**Benifactor**s can regis
 ## Directory Schema
 🚀 NOTIC: If you tap on below image and open in Mermaid website then u can easily open directory or files with just taping on each Node
 
-e.x: with taping on "\Documents" Node, you'll redirect to that directory in github
+e.x: with taping on "\Documents" Node, you'll redirect to that directory in my project
 
 **Access all Project's File in One Place**
 
