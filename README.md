@@ -1,9 +1,7 @@
 # Charity Management System (web,desktop)
 
-Charity Management System is a place that **User**s can add their **
-
+Charity Management System is a place that **User**s can add their
 **Task** in to the application and in other hand, **Benefactor** can find it and do that **Task** for the **User**.
-
 In this application also we can have multiple charity (**Benifactor**s can register **Charity**).
 
 ## Key Point OF This Project
