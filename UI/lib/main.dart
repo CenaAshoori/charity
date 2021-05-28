@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'all_task_view.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -93,6 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            AllTaskView(),
             Text(
               'You have pushed the button this many times:',
             ),
