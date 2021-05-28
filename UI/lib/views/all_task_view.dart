@@ -41,6 +41,23 @@ class _AllTaskViewState extends State<AllTaskView> {
                     children: widgets,
                   ),
                 );
+              } else if (snapshot.hasError) {
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.signal_wifi_off_sharp),
+                    Text("Chek your connection and than try again"),
+                    Container(
+                      width: 100,
+                      height: 50,
+                      child: Card(
+                        child: TextButton(
+                            onPressed: () => setState(() => {}),
+                            child: Text("Try again")),
+                      ),
+                    )
+                  ],
+                );
               } else {
                 return Center(child: CircularProgressIndicator());
               }
