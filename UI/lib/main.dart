@@ -32,15 +32,21 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    var condition = MediaQuery.of(context).size.width > 700;
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: condition ? null : Drawer(child: MyDrawer()),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Drawer(child: MyDrawer()),
+            condition
+                ? Container(
+                    width: (MediaQuery.of(context).size.width * .3),
+                    child: Drawer(child: MyDrawer()))
+                : Container(),
             Flexible(child: AllTaskView())
           ],
         ),
