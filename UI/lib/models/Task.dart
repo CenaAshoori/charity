@@ -14,4 +14,13 @@ class Task {
         benefactor: json['benefactor'],
         charity: json['charity']);
   }
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['id'] = this.id;
+    data['title'] = this.title;
+    data['description'] = this.description;
+    data['benefactor'] = this.benefactor;
+    data['charity'] = this.charity;
+    return data;
+  }
 }
