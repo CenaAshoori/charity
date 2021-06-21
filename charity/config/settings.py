@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'charities',
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [

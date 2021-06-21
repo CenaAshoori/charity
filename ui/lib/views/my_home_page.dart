@@ -1,4 +1,5 @@
 import 'package:charity_desktop/views/drawer.dart';
+import 'package:charity_desktop/views/login.dart';
 import 'package:flutter/material.dart';
 
 import 'all_task_view.dart';
@@ -17,6 +18,16 @@ class _MyHomePageState extends State<MyHomePage> {
     var condition = MediaQuery.of(context).size.width > 700;
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+              icon: Icon(Icons.login),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginView()),
+                );
+              })
+        ],
         title: Text(widget.title),
       ),
       drawer: condition ? null : Drawer(child: MyDrawer()),

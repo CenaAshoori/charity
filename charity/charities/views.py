@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import CreateAPIView, ListAPIView
@@ -9,6 +10,7 @@ from .serializers import TaskSerializer
 # Create your views here.
 
 class TaskListApi(ListAPIView):
+    permission_classes = (AllowAny,)
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
 task_list_api = TaskListApi().as_view()
