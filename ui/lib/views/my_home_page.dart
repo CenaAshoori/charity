@@ -21,11 +21,12 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: [
           IconButton(
               icon: Icon(Icons.login),
-              onPressed: () {
-                Navigator.push(
+              onPressed: () async {
+                await Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => LoginView()),
                 );
+                setState(() {});
               })
         ],
         title: Text(widget.title),

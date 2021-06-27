@@ -1,4 +1,4 @@
-import 'package:charity_desktop/network/api.dart';
+import 'package:charity_desktop/network/login_api.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
@@ -68,8 +68,21 @@ class _LoginViewState extends State<LoginView> {
                           onSubmitted: (_) => onSubmit(),
                         ),
                         TextButton(
-                          onPressed: () async =>
-                              {await get_token(userName.text, password.text)},
+                          onPressed: () async {
+                            await login(userName.text, password.text)
+                                .then((is_loggedin) {
+                              if (is_loggedin == true) Navigator.pop(context);
+                            }).onError((error, stackTrace) {
+                              final snackBar = SnackBar(
+                                  backgroundColor: Colors.red[400],
+                                  content: Text(
+                                    "User with this creadential isn't exist!",
+                                    textAlign: TextAlign.center,
+                                  ));
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(snackBar);
+                            });
+                          },
                           child: Text(
                             "Login",
                             style: TextStyle(color: Colors.redAccent[700]),
