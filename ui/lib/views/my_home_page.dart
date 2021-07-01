@@ -1,21 +1,22 @@
+import 'package:charity_desktop/bloc/bloc/navigator_bloc.dart';
+import 'package:charity_desktop/views/all_task_view.dart';
 import 'package:charity_desktop/views/drawer.dart';
 import 'package:charity_desktop/views/login.dart';
 import 'package:flutter/material.dart';
-
-import 'all_task_view.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
+  MyHomePage({Key key}) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String title = "All Task";
   @override
   Widget build(BuildContext context) {
-    var condition = MediaQuery.of(context).size.width > 700;
+    var responsive_condition = MediaQuery.of(context).size.width > 700;
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -29,19 +30,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 setState(() {});
               })
         ],
-        title: Text(widget.title),
+        title: Text(title),
       ),
-      drawer: condition ? null : Drawer(child: MyDrawer()),
+      drawer: responsive_condition ? null : Drawer(child: MyDrawer()),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            condition
+            responsive_condition
                 ? Container(
                     width: (MediaQuery.of(context).size.width * .3),
                     child: Drawer(child: MyDrawer()))
                 : Container(),
-            Flexible(child: AllTaskView())
+            Flexible(child: BlocBuilder<NavigatorBloc, AppState>(
+              builder: (context, state) {
+                switch (state) {
+                  case AppState.LogIn:
+                    return LoginView();
+                  case AppState.AllTask:
+                    return AllTaskView();
+                    break;
+                  case AppState.LogOut:
+                    return LoginView();
+                  case AppState.SignUp:
+                    return LoginView();
+                }
+              },
+            ))
           ],
         ),
       ),
