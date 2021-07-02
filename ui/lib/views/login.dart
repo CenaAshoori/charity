@@ -67,9 +67,8 @@ class _LoginViewState extends State<LoginView> {
                         TextButton(
                           onPressed: () async {
                             await login(userName.text, password.text)
-                                .then((is_loggedin) {
-                              if (is_loggedin == true) Navigator.pop(context);
-                            }).onError((error, stackTrace) {
+                                .then((is_loggedin) {})
+                                .onError((error, stackTrace) {
                               final snackBar = SnackBar(
                                   backgroundColor: Colors.red[400],
                                   content: Text(
